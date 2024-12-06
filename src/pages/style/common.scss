@@ -1,0 +1,322 @@
+@import '/src/style/common';
+
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $basic350;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+}
+
+.section-selectBox {
+  display: flex;
+  gap: 25px;
+}
+
+.pdf-container {
+  margin-top: 20px;
+  padding-top: 20px;
+  align-items: center;
+  background-color: $basic800;
+  border: 1px solid $basic900;
+  border-radius: 8px;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  min-height: 800px;
+  justify-content: center;
+  color: black;
+}
+
+.pdfBtnContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.pdfBtnContainer button {
+  background: none;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.remove-btn {
+  padding: 8px 13px;
+  background-color: $basic100;
+  border-radius: 8px;
+  border: 1px solid $basic300;
+  color: $basic500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  transition: 0.3s;
+  height: 52px;
+  &:hover {
+    background-color: $basic150;
+    border: 1px solid $basic350;
+    color: $basic600;
+  }
+  &.remove-customer {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  &:disabled {
+    border: none;
+    background-color: $basic400;
+    color: $basic500;
+    cursor: auto;
+  }
+}
+
+.account-list {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.account-list-item-label {
+  width: 120px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  font-weight: 700;
+  color: $basic800;
+}
+.invalid.invalid-padding130 {
+  padding-left: 130px;
+}
+.invalid.invalid-center {
+  padding: 0;
+  text-align: center;
+  margin: -10px 0 -10px;
+}
+.section-table {
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 60px;
+}
+tbody {
+  background: $basic300;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+
+.search-btn {
+  padding: 8px 13px;
+  background-color: $basic100;
+  border-radius: 8px;
+  border: 1px solid $basic300;
+  color: $basic500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  transition: 0.3s;
+  margin-left: 20px;
+  width: 100px;
+  height: 52px;
+  &:hover {
+    background-color: $basic150;
+    border: 1px solid $basic350;
+    color: $basic600;
+  }
+}
+
+.download-btn {
+  padding: 8px 13px;
+  background-color: $basic100;
+  border-radius: 8px;
+  border: 1px solid $basic300;
+  color: $basic500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  transition: 0.3s;
+  width: 50px;
+  height: 100%;
+  &:hover {
+    background-color: $basic150;
+    border: 1px solid $basic350;
+    color: $basic600;
+  }
+  &:disabled {
+    border: none;
+    background-color: $basic400;
+    color: $basic500;
+    cursor: auto;
+  }
+}
+
+.MuiFormGroup-row {
+  gap: 60px;
+
+  &.inquiry-radio {
+    width: 66%;
+    gap: 30px;
+  }
+}
+
+.form-list-item.gap20 {
+  justify-content: start;
+  gap: 20px;
+  &.background-file-item {
+    position: relative;
+  }
+}
+.form-list-item li {
+  width: 25%;
+}
+
+.add-btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.section-table {
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 60px;
+}
+tbody {
+  background: $basic300;
+}
+
+.section-add-customer {
+  display: flex;
+  gap: 25px;
+  overflow: auto;
+  &.info-container {
+    gap: 0;
+    flex-direction: column;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.4px;
+      font-weight: 700;
+      color: #e3e5e8;
+      border-bottom: 2px solid $basic700;
+      border-top: 2px solid $basic700;
+      padding: 5px 0;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.customer-list-item-label {
+  width: 120px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  color: $basic800;
+  .sub-label {
+    font-size: 12px;
+    color: $basic600;
+    margin-left: 5px;
+  }
+}
+
+.form-list-item.add-list-item {
+  align-items: normal;
+  flex-direction: column;
+  gap: 10px;
+
+  .item-inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.form-list-item.add-list-item.package-item {
+  justify-content: normal;
+}
+.customer-contianer {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 2px solid $basic400;
+}
+
+.form-list-item .item-info {
+  display: flex;
+  align-items: normal;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-continer {
+  display: flex;
+  justify-content: end;
+  &.gap20 {
+    gap: 20px;
+  }
+}
+
+.MuiTableRow-hover {
+  cursor: pointer;
+}
+
+.packageInput {
+  flex: 0 0 !important;
+}
+
+.flex-center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.cardImage {
+  height: 300px;
+  background-color: $basic350;
+  border-radius: 8px;
+  flex: 1;
+  border: 2px solid $basic350;
+}
+
+.account-btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.truncate {
+  max-width: 150px; /* 필요한 너비로 설정 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input[type='file']::file-selector-button {
+  display: none;
+  font-size: 0.8rem;
+}
+
+.invalid-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.background-file {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  width: 36%;
+}
